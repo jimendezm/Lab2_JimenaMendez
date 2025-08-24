@@ -1,0 +1,18 @@
+h2 {
+    color: #e65100 !important;
+}
+
+.btn.special {
+    background-color: #ff7043 !important;
+    color: #fff !important;
+    border: 2px solid #bf360c !important;
+}
+
+#about .card {
+    background-color: #fff !important;
+}
+
+footer .tag {
+    background-color: #757575 !important;
+    color: #fff !important;
+}
