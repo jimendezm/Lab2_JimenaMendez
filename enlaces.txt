@@ -1,2 +1,2 @@
 URL repositorio: https://github.com/jimendezm/Lab2_JimenaMendez
-URL del sitio: https://cybersecuritysummit.netlify.app/
+URL del sitio: https://cybersecurity-summit.netlify.app/
