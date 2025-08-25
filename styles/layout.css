@@ -36,10 +36,10 @@ main {
     padding: 20px;
     background-color: white;
     display: flex;
-    flex-direction: column; /* 🔥 ahora todo se apila en vertical */
-    gap: 40px; /* un poco más de espacio entre secciones */
-    justify-content: center; /* centra horizontal */
-    align-items: center;     /* centra vertical (si el contenedor tiene altura) */
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
 }
 
 article {

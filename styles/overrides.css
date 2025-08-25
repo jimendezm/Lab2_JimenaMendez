@@ -16,3 +16,7 @@ footer .tag {
     background-color: #757575 !important;
     color: #fff !important;
 }
+ /*Para el grid .card quiero que el ancho se ajuste al contenido*/
+.grid .card {
+    width: auto !important;
+}
