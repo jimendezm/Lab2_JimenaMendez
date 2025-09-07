@@ -13,14 +13,15 @@
 </head>
 <body>
     <!-- Header con logo y navegación -->
-    <header class="container header">
-        <h1 class="logo" style="margin-bottom:24px; color:white;">CR Cyber Security Summit 2025</h1>
-        <p class="subtitle">Protegiendo el futuro digital de Costa Rica</p>
-        
+    <header class="container header hero">
+        <div class="hero-text">
+            <h1 class="logo" style="margin-bottom:24px; color:white;">CR Cyber Security Summit 2025</h1>
+            <p class="subtitle">Protegiendo el futuro digital de Costa Rica</p>
+        </div>
+
         <nav aria-label="Menú principal">
-            <!-- Checkbox oculto -->
+            <!-- Checkbox oculto para menú hamburguesa -->
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <!-- Label que actúa como botón hamburguesa -->
             <label for="menu-toggle" class="hamburger" aria-label="Abrir menú">
                 ☰
             </label>
@@ -36,10 +37,15 @@
                 <li><a href="https://www.micitt.go.cr" target="_blank" rel="noopener noreferrer" class="btn">MICITT</a></li>
             </ul>
         </nav>
-
     </header>
-
     <main>
+        <picture>
+                <source media="(min-width:1024px)" srcset="imagenes/hero-desktop.png">
+                <source media="(min-width:768px)" srcset="imagenes/hero-tablet.png">
+                <img src="imagenes/hero-mobile.png" 
+                     alt="Equipo de seguridad analizando datos en pantallas" 
+                     tabindex="0" style="width:100%; height:auto;">
+        </picture>
         <!-- Sección de Inicio -->
         <section id="inicio" class="container" data-section="inicio">
             <div class="card">
@@ -65,7 +71,7 @@
                 <img src="https://www.benacazon.es/export/sites/benacazon/.galleries/imagenes-noticias-test/Innovacixn_Taller_Informxtica_infantil_1_1549630262372.jpg" 
                      alt="Personas en taller de tecnología trabajando en laptops" 
                      tabindex="-1">
-                <span class="badge">Nuevo</span>
+                <span class="decorativo" aria-hidden="true">Nuevo</span>
             </div>
             
             <div class="row">

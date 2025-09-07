@@ -35,18 +35,20 @@
     color: #fff;
 }
 
+
 .card {
     background-color: #fff;
     border: 1px solid #ffd9b3;
     border-radius: 10px;
     padding: 18px;
-    margin-block: 15px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    width: 800px;   
-    height: auto; 
+    width: 100%;
+    height: auto;
     position: relative;
+    line-height: 1.5rem; /* mejora interlineado */
 }
+
 .card:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.12);
@@ -58,10 +60,11 @@
 
 /* para las secciones con varias cards */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 10px 0;
+    display: grid;
+    gap: 20px;
+    width: 100%;
+    padding: 10px 0;
+    grid-template-columns: 1fr; /* móvil: 1 columna */
 }
 
 
@@ -174,4 +177,29 @@ form legend {
     color: #cc5200;
     padding: 0 5px;
     font-size: 0.95rem;
+}
+
+
+/* Tablet: 2 columnas */
+@media(min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop: 3 columnas */
+@media(min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card .decorativo {
+    display: none; /* oculto por defecto */
+}
+
+@media (min-width: 1024px) {
+    .card .decorativo {
+        display: inline-block !important; /* se muestra en desktop */
+    }
 }

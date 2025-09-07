@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -124,5 +125,17 @@ footer {
 @media(min-width: 1024px) {
     body {
         font-size: 18px;
+    }
+}
+
+@media(max-width: 480px) {
+    main {
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .card {
+        padding: 12px;
+        margin-bottom: 12px;
     }
 }

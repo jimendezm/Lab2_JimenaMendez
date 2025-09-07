@@ -19,4 +19,5 @@ footer .tag {
  /*Para el grid .card quiero que el ancho se ajuste al contenido*/
 .grid .card {
     width: auto !important;
+    margin: 1% !important;
 }

@@ -1,2 +1,2 @@
-URL repositorio: https://github.com/jimendezm/Lab2_JimenaMendez
-URL del sitio: https://cybersecurity-summit.netlify.app/
+URL de la rama: https://github.com/jimendezm/Lab2_JimenaMendez/tree/lab5-diseno-responsive
+URL del sitio: https://cybersecurity-sum.netlify.app/
